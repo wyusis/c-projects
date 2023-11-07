@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript циклдары</title>
+</head>
+<body>
+    <h1>JavaScript циклдары</h1>
+
+    <h2>Цикл "for":</h2>
+    <ul id="for-loop-result"></ul>
+    <script>
+        var forLoopResult = document.getElementById("for-loop-result");
+        for (var i = 1; i <= 5; i++) {
+            var listItem = document.createElement("li");
+            listItem.textContent = "Элемент " + i;
+            forLoopResult.appendChild(listItem);
+        }
+    </script>
+
+    <h2>Цикл "do...while":</h2>
+    <ul id="do-while-loop-result"></ul>
+    <script>
+        var doWhileLoopResult = document.getElementById("do-while-loop-result");
+        var j = 1;
+        do {
+            var listItem = document.createElement("li");
+            listItem.textContent = "Элемент " + j;
+            doWhileLoopResult.appendChild(listItem);
+            j++;
+        } while (j <= 5);
+    </script>
+
+    <h2>Цикл "while":</h2>
+    <ul id="while-loop-result"></ul>
+    <script>
+        var whileLoopResult = document.getElementById("while-loop-result");
+        var k = 1;
+        while (k <= 5) {
+            var listItem = document.createElement("li");
+            listItem.textContent = "Элемент " + k;
+            whileLoopResult.appendChild(listItem);
+            k++;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Информация о планете Земля</title>
+</head>
+<body>
+    <h1>Информация о планете Земля</h1>
+    <ul>
+        <li>Название: <span id="planetName"></span></li>
+        <li>Тип: <span id="planetType"></span></li>
+        <li>Период вращения (часы): <span id="rotationPeriod"></span></li>
+        <li>Длительность года (дни): <span id="yearDuration"></span></li>
+    </ul>
+
+    <script>
+        var earth = new Array(4);
+
+        earth[0] = "Планета";
+        earth[1] = "Жер";
+        earth[2] = "24 сағат";
+        earth[3] = "365.25";
+
+        document.getElementById("planetName").textContent = earth[0];
+        document.getElementById("planetType").textContent = earth[1];
+        document.getElementById("rotationPeriod").textContent = earth[2];
+        document.getElementById("yearDuration").textContent = earth[3];
+    </script>
+</body>
+</html>
